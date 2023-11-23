@@ -25,8 +25,6 @@ const server = http.createServer(async (req, res) => {
     return route.handler(req, res);
   }
 
-  console.log(route);
-
   return res.writeHead(404).end('Not found!');
 });
 
